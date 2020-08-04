@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      - - shell: bash
+      - shell: bash
             env:
               SUPER_SECRET: ${{ secrets.QA_MY_KEY }}
             run: echo Hello, world! "$SUPER_SECRET"
