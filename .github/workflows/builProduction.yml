@@ -25,7 +25,6 @@ jobs:
     runs-on: ubuntu-18.04
     env:
       SUPER_SECRET: ${{ secrets.QA_MY_KEY }}
-      run: echo Hello, world! $SUPER_SECRET
     
     steps:
       - uses: actions/checkout@v1
