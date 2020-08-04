@@ -21,7 +21,7 @@ jobs:
         run: bash ./gradlew test --stacktrace
 
   apk:
-    name: Generate APK
+    name: Generate APK ${{ secrets.QA_MY_KEY }}
     runs-on: ubuntu-18.04
 
     steps:
